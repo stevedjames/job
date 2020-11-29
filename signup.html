@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -17,32 +17,7 @@
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
-            <h1 id="signup">Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fa fa-google "></i></a>
-                <a href="#" class="social"><i class="fa fa-facebook "></i></a>
-                <a href="#" class="social"><i class="fa fa-linkedin "></i></a>
-			</div>
-            <span></span>
-            <span for="regas">Register As </span><br>
-            <div class="custom-select" style="width:200px;">
-                <select style="width: 100%; text-decoration: none; height: 2em; border-radius: 2em; border-color: white;">
-                  <option value="0" disabled selected>Choose</option>
-                  <option value="1">Fresher</option>
-                  <option value="2">Professional</option>
-                </select>
-            </div>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            
-            <br>
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1 id="login">Login </h1>
+            <h1 id="login">Login </h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fa fa-google "></i></a>
                 <a href="#" class="social"><i class="fa fa-facebook "></i></a>
@@ -56,17 +31,35 @@
 			<button>Sign In</button>
 		</form>
 	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1 id="signup">Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fa fa-google "></i></a>
+                <a href="#" class="social"><i class="fa fa-facebook "></i></a>
+                <a href="#" class="social"><i class="fa fa-linkedin "></i></a>
+			</div>
+            <span></span>
+            
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            
+            <br>
+			<button>Sign Up</button>
+		</form>
+	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Login</button>
-			</div>
-			<div class="overlay-panel overlay-right">
 				<h1>Hello, Friend!</h1>
 				<p>Enter your personal details and start journey with us</p>
 				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Login</button>
 			</div>
 		</div>
 	</div>
