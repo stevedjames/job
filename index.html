@@ -1,323 +1,373 @@
 <!DOCTYPE html>
-<html style="scroll-behavior: smooth;">
-<title>Chore Hunt | Jobs4All</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-</style>
-<body>
+<html lang="en">
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">Home</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#plans" class="w3-button w3-block">Jobs</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block">About</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block">Contact</a>
-    </div>
-  </div>
-</div>
+  <head>
 
-<!-- Content -->
-<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-  <div class="w3-panel">
-      <img src="pp2.jpeg" style="width: 20%; height: 20%;"></img>
-      <div style="float: right; ">
-  <a href="login.html" class="w3-button w3-black w3-margin text-left  " ><i class=""></i>Login</a>
-</div>
-    <h1><b>CHORE HUNT</b></h1>
-    <!-- <p>Job4All</p> -->
-  </div>
+    <title>Job Portal</title>
 
-  <!-- Slideshow -->
-  <div class="w3-container">
-    <div class="w3-display-container mySlides">
-      <img src="https://www.stoodnt.com/blog/wp-content/uploads/2018/08/expat-finding-a-job-in-chennai.jpg" style="width:100%">
-      <div class="w3-display-topleft w3-container w3-padding-32">
-        <!-- <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span> -->
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_76806724_52722.jpg" style="width:100%">
-      <div class="w3-display-middle w3-container w3-padding-32">
-        <!-- <span class="w3-white w3-padding-large w3-animate-bottom">Klorim tipsum</span> -->
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-      <img src="https://dpuk71x9wlmkf.cloudfront.net/assets/2018/05/15191844/Looking-for-a-job_social.jpg" style="width:100%">
-      <div class="w3-display-topright w3-container w3-padding-32">
-        <!-- <span class="w3-white w3-padding-large w3-animate-bottom">Blorum pipsum</span> -->
-      </div>
-    </div>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <!-- Slideshow next/previous buttons -->
-    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
-      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
     
-      <div class="w3-center">
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Grid -->
-  <div class="w3-row w3-container">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
-    </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3>Companies</h3>
-      <p>Use Chore Hunt to publish jobs, events, promotions, movement and network.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3>Professionals </h3>
-      <p>Apply for best hospitality jobs from top hospitality companies, stay informed with industry updates and network with global colleagues.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3>Institutes</h3>
-      <p>Chore  Hunt Helps Schools to Publish Courses and Attract the Best Students, We Provide Alumni Section and Networking Opportunities.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-        <h3>Students</h3>
-        <p>Discover and easily apply to courses that match your requirements. Join your school alumni and network. </p>
-    </div>
-   
-  </div>
-
-  <!-- Grid -->
-  <div class="w3-row-padding" id="plans">
-    <div class="w3-center w3-padding-64">
-      <h3>Plans</h3>
-      <p>Discover and easily apply to jobs that match your requirements.Choose any of options below and register  </p>
-    </div>
-<form action="signup.html">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Fresher</li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$0</h2>
-          <span class="w3-opacity">Free</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large" >Sign Up</button>
-        </li>
-      </ul>
-    </div>
-</form>
-<form action="signup.html">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Professional</li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$0</h2>
-          <span class="w3-opacity">Free</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-</form>
-<form action="signup.html">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Company</li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$0</h2>
-          <span class="w3-opacity">Free</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</form>
-  <!-- Grid -->
-  <div class="w3-row-padding" id="about">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <!-- <img src="https://pbs.twimg.com/profile_images/744490154841149440/2IkzDgdh_400x400.jpg" alt="John" style="width:100%"> -->
-        <div class="w3-container">
-          <h3>Noel Philip Issac</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Backend Developer</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <!-- <img src="pp.jpeg" alt="Mike" style="width:100%"> -->
-        <div class="w3-container">
-          <h3>Steve D James</h3>
-          <p class="w3-opacity">Web Designing</p>
-          <p>Front End Developer</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <!-- <img src="pp (1).jpeg" alt="Jane" style="width:100%"> -->
-        <div class="w3-container">
-          <h3>Jerin Thomas</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Javascript Developer</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row-padding" id="about">
-       
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
-            <!-- <img src="https://pbs.twimg.com/profile_images/744490154841149440/2IkzDgdh_400x400.jpg" alt="John" style="width:100%"> -->
-            <div class="w3-container">
-              <h3>Ashbi P Binu </h3>
-              <p class="w3-opacity">Web Designer</p>
-              <p>Front End Developer </p>
-              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-          </div>
-        </div>
+    <body>
     
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
-            <!-- <img src="pp.jpeg" alt="Mike" style="width:100%"> -->
-            <div class="w3-container">
-              <h3>Kichu</h3>
-              <p class="w3-opacity">Database Handler</p>
-              <p>Backend Developer</p>
-              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-          </div>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
     
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-card-4">
-            <!-- <img src="pp (1).jpeg" alt="Jane" style="width:100%"> -->
-            <div class="w3-container">
-              <h3>Jxyx</h3>
-              <p class="w3-opacity">Designer</p>
-              <p>Javascript Developer</p>
-              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">Job<em> Portal</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="team.html">Team</a>
+                                    <a class="dropdown-item" href="blog.html">Blog</a>
+                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                    <a class="dropdown-item" href="terms.html">Terms</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li> 
+                            <li><a href="sign.html">SignUp</a></li> 
+                            <li><a href="login.html">Login </a></li> 
+
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
             </div>
-          </div>
         </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-  <!-- Contact -->
-  <div class="w3-center w3-padding-64" id="contact">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
-  </div>
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/images/video.mp4" type="video/mp4" />
+        </video>
 
-  <form class="w3-container" action="/action_page.php" target="_blank">
-    <div class="w3-section">
-      <label>Name</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>You are just one click away </h6>
+                <h2>Find the perfect <em>Job</em></h2>
+                <div class="main-button">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w3-section">
-      <label>Email</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
-    </div>
-    <div class="w3-section">
-      <label>Subject</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
-    </div>
-    <div class="w3-section">
-      <label>Message</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
-    </div>
-    <button type="submit" class="w3-button w3-block w3-black">Send</button>
-  </form>
+    <!-- ***** Main Banner Area End ***** -->
 
-</div>
+   <!-- ***** Cars Starts ***** -->
+    <section class="section" id="trainers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Featured <em>Jobs</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <p>Find the jobs matching your qualification. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="assets/images/product-1-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span> <sup>$</sup>70 000 </span>
 
-<!-- Footer -->
+                            <h4>Full Stack Developer</h4>
 
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <h4>Thank You</h4>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">chorehunt.com</a></p>
-</footer>
+                            <p>Computer &nbsp;/&nbsp; IT Jobs</p>
 
+                            <ul class="social-icons">
+                                <li><a href="job-details.html">+ View More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="assets/images/product-2-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span> <sup>$</sup>70 000 </span>
 
-<script>
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
+                            <h4>Python developer</h4>
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+                            <p>Computer &nbsp;/&nbsp; IT Jobs</p>
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+                            <ul class="social-icons">
+                                <li><a href="job-details.html">+ View More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="assets/images/product-3-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span> <sup>$</sup>70 000 </span>
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
+                            <h4>Junior Software Engineer </h4>
 
-</body>
+                            <p>Computer &nbsp;/&nbsp; IT Jobs</p>
+
+                            <ul class="social-icons">
+                                <li><a href="job-details.html">+ View More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="main-button text-center">
+                <a href="jobs.html">View Jobs</a>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Cars Ends ***** -->
+
+    <section class="section section-bg" id="schedule" style="background-image: url(assets/images/about-fullscreen-1-1920x700.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading dark-bg">
+                        <h2>About <em>Us</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <!-- <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-content text-center">
+                        <p>Just because you're starting a business, doesn't mean you have to be an expert on everything. If you're not an accountant or bookkeeper, hire one (or both). (These Tips for Finding a Good Accountant may be useful.) If you need to write up a contract, and you're not a lawyer, hire one. You will waste more time and possibly money in the long run trying to do things yourself that you are not qualified to do.</p>
+
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nulla quo cum officia laboriosam. Amet tempore, aliquid quia eius commodi, doloremque omnis delectus laudantium dolor reiciendis non nulla! Doloremque maxime quo eum in culpa mollitia similique eius doloribus voluptatem facilis! Voluptatibus, eligendi, illum. Distinctio, non!</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Blog Start ***** -->
+    <!-- <section class="section" id="our-classes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Read our <em>Blog</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="tabs">
+              <div class="col-lg-4">
+                <ul>
+                  <li><a href='#tabs-1'>Lorem ipsum dolor sit amet, consectetur adipisicing.</a></li>
+                  <li><a href='#tabs-2'>Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.</a></li>
+                  <li><a href='#tabs-3'>Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.</a></li>
+                  <div class="main-rounded-button"><a href="blog.html">Read More</a></div>
+                </ul>
+              </div>
+              <div class="col-lg-8">
+                <section class='tabs-content'>
+                  <article id='tabs-1'>
+                    <img src="assets/images/blog-image-1-940x460.jpg" alt="">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+
+                    <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
+
+                    <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                    <div class="main-button">
+                        <a href="blog-details.html">Continue Reading</a>
+                    </div>
+                  </article>
+                  <article id='tabs-2'>
+                    <img src="assets/images/blog-image-2-940x460.jpg" alt="">
+                    <h4>Aspernatur excepturi magni, placeat rerum nobis magnam libero! Soluta.</h4>
+                    <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
+                    <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <div class="main-button">
+                        <a href="blog-details.html">Continue Reading</a>
+                    </div>
+                  </article>
+                  <article id='tabs-3'>
+                    <img src="assets/images/blog-image-3-940x460.jpg" alt="">
+                    <h4>Sunt hic recusandae vitae explicabo quidem laudantium corrupti non adipisci nihil.</h4>
+                    <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2020 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
+                    <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
+                    <div class="main-button">
+                        <a href="blog-details.html">Continue Reading</a>
+                    </div>
+                  </article>
+                </section>
+              </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- ***** Blog End ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Read our <em>Testimonials</em></h2>
+                        <img src="assets/images/line-dec.png" alt="waves">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem incidunt alias minima tenetur nemo necessitatibus?</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="assets/images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>John Doe</h4>
+                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="assets/images/features-first-icon.png" alt="second one">
+                            </div>
+                            <div class="right-content">
+                                <h4>John Doe</h4>
+                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="assets/images/features-first-icon.png" alt="fourth muscle">
+                            </div>
+                            <div class="right-content">
+                                <h4>John Doe</h4>
+                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="assets/images/features-first-icon.png" alt="training fifth">
+                            </div>
+                            <div class="right-content">
+                                <h4>John Doe</h4>
+                                <p><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta numquam maxime voluptatibus, impedit sed! Necessitatibus repellendus sed deleniti id et!"</em></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="main-button text-center">
+                <a href="testimonials.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <h2>Send us a <em>message</em></h2>
+                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
+                        <div class="main-button">
+                            <a href="contact.html">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Call to Action End ***** -->
+
+    <!-- ***** Testimonials Item Start ***** -->
+        <!-- ***** Testimonials Item End ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2020 Noel Technologies
+                        <a href="#">jobportal.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/accordions.js"></script>
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
 </html>

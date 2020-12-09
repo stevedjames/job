@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<title>Chore Hunt | Jobs4All</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+  
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+	background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right:  28px;
+  width: 200px;
+}
+button:focus{
+	outline: none;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  
+  
+}
+/* body :not(.form-container){
+    filter: blur(2px);    
+} */
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color:darkgray;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:black;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover, .ope-button:hover {
+	
+  opacity: 2;
+}
+</style>
+<body >
+
+<!-- Links (sit on top) -->
+ <!-- ***** Preloader Start ***** -->
+ <div id="js-preloader" class="js-preloader">
+  <div class="preloader-inner">
+    <span class="dot"></span>
+    <div class="dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+<!-- ***** Preloader End ***** -->
+
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">Job<em> Portal</em></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                          
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="team.html">Team</a>
+                                <a class="dropdown-item" href="blog.html">Blog</a>
+                                <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                <a class="dropdown-item" href="terms.html">Terms</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li> 
+                        <li><a href="login.html">Login </a></li> 
+
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+ <!-- <h1><b>CHORE HUNT</b></h1> -->
+  <!-- Grid -->
+  <div class="container " id="myButton1" style="margin-top: 1em;">
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+        <h1 style="margin-top: .5em;"><b>SIGN UP</b></h1> 
+      <h3>Plans</h3>
+      <p>Discover and easily apply to jobs that match your requirements.Choose any of options below and register  </p>
+    </div>
+<form action="signup.html">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Student</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$0</h2>
+          <span class="w3-opacity">Free</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <input type="button" class="w3-button w3-green w3-padding-large darkgray" onclick="student()" value="Choose">
+        </li>
+      </ul>
+    </div>
+</form>
+<form action="signup.html">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Professional</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$0</h2>
+          <span class="w3-opacity">Free</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+            <input type="button" class="w3-button w3-green w3-padding-large darkgray" onclick="prof()" value="Choose">
+          </li>
+      </ul>
+    </div>
+</form>
+<form action="signup.html">
+    <div class="w3-third w3-margin-bottom" id="myButton1" onclick="change()">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Recruiter</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$0</h2>
+          <span class="w3-opacity">Free</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+            <input type="button" class="w3-button w3-green w3-padding-large darkgray" onclick="recruiter()" value="Choose">
+          </li>
+      </ul>
+    </div>
+  </div>
+</form>
+</div>
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+ 
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>
+                      Copyright © 2020 Noel Technologies
+                      <a href="#">jobportal.com</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+<script type="text/javascript">
+  function student()
+    {
+        var x=document.getElementById("myButton1");
+        x.innerHTML= "" ;
+        window.location.replace("studentsignup.html");
+    }
+</script>
+<script type="text/javascript">
+    function prof()
+    {
+        var x=document.getElementById("myButton1");
+        x.innerHTML=  
+        window.location.replace("profsignup.html");
+    }
+</script>
+<script type="text/javascript">
+    function recruiter()
+    {
+        var x=document.getElementById("myButton1");
+        x.innerHTML=  "";
+        window.location.replace("recruitersignup.html");
+    }
+</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script> 
+<script src="assets/js/mixitup.js"></script> 
+<script src="assets/js/accordions.js"></script>
+
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

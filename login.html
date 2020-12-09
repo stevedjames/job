@@ -1,76 +1,237 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<html lang="en">
 
-</head>
-<body>
+  <head>
 
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-            <h1 id="signup">Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fa fa-google "></i></a>
-                <a href="#" class="social"><i class="fa fa-facebook "></i></a>
-                <a href="#" class="social"><i class="fa fa-linkedin "></i></a>
-			</div>
-            <span></span>
-            <span for="regas">Register As </span><br>
-            <div class="custom-select" style="width:200px;">
-                <select style="width: 100%; text-decoration: none; height: 2em; border-radius: 2em; border-color: white;">
-                  <option value="0" disabled selected>Choose</option>
-                  <option value="1">Fresher</option>
-                  <option value="2">Professional</option>
-                </select>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Job Portal</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+    <style>
+      body {
+    font-family: "Karla", sans-serif;
+    background-color: #fff;
+    min-height: 100vh; }
+  
+  .brand-wrapper {
+    padding-top: 7px;
+    padding-bottom: 8px; }
+    .brand-wrapper .logo {
+      height: 25px; }
+  
+  .login-section-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 68px 100px;
+    background-color: #fff; }
+    @media (max-width: 991px) {
+      .login-section-wrapper {
+        padding-left: 50px;
+        padding-right: 50px; } }
+    @media (max-width: 575px) {
+      .login-section-wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 100vh; } }
+  
+  .login-wrapper {
+    width: 300px;
+    max-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px; }
+    @media (max-width: 575px) {
+      .login-wrapper {
+        width: 100%; } }
+    .login-wrapper label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #b0adad; }
+    .login-wrapper .form-control {
+      border: none;
+      border-bottom: 1px solid #e7e7e7;
+      border-radius: 0;
+      padding: 9px 5px;
+      min-height: 40px;
+      font-size: 18px;
+      font-weight: normal; }
+      .login-wrapper .form-control::-webkit-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::-moz-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control:-ms-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::-ms-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::placeholder {
+        color: #b0adad; }
+    .login-wrapper .login-btn {
+      padding: 13px 20px;
+      background-color: #fdbb28;
+      border-radius: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 14px; }
+      .login-wrapper .login-btn:hover {
+        border: 1px solid #fdbb28;
+        background-color: #fff;
+        color: #fdbb28; }
+    .login-wrapper a.forgot-password-link {
+      color: #080808;
+      font-size: 14px;
+      text-decoration: underline;
+      display: inline-block;
+      margin-bottom: 54px; }
+      @media (max-width: 575px) {
+        .login-wrapper a.forgot-password-link {
+          margin-bottom: 16px; } }
+    .login-wrapper-footer-text {
+      font-size: 16px;
+      color: #000;
+      margin-bottom: 0; }
+  
+  .login-title {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px; }
+  
+  .login-img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left; }
+  
+  /*# sourceMappingURL=login.css.map */
+  </style>
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">Job<em> Portal</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="team.html">Team</a>
+                                    <a class="dropdown-item" href="blog.html">Blog</a>
+                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                    <a class="dropdown-item" href="terms.html">Terms</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li> 
+                            <li><a href="sign.html">SignUp</a></li> 
+                            
+
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
             </div>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            
-            <br>
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1 id="login">Login </h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fa fa-google "></i></a>
-                <a href="#" class="social"><i class="fa fa-facebook "></i></a>
-                <a href="#" class="social"><i class="fa fa-linkedin "></i></a>
-                
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Login</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
-			</div>
-		</div>
-	</div>
-</div>
-<script src="script.js"></script>
+        </div>
+    </header>
+  <main>
+    <div class="container-fluid" style="margin-top:2em;">
+      <div class="row">
+        <div class="col-sm-6 login-section-wrapper">
+          <div class="brand-wrapper">
+            <img src="logo.svg" alt="logo" class="logo">
+          </div>
+          <div class="login-wrapper my-auto">
+            <h1 class="login-title">Log in</h1>
+            <form action="">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com" required >
+              </div>
+              <div class="form-group mb-4">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="enter your passsword" required >
+              </div>
+              <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Login">
+            </form>
+            <a href="#!" class="forgot-password-link">Forgot password?</a>
+            <p class="login-wrapper-footer-text">Don't have an account? <a href="sign.html" class="text-reset">Register here</a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 px-0 d-none d-sm-block">
+          <img src="https://images.wallpaperscraft.com/image/legs_sneakers_shoes_140745_1280x1024.jpg" alt="login image" class="login-img">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>
+                    Copyright © 2020 Noel Technologies
+                    <a href="#">jobportal.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/accordions.js"></script>
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
 </body>
 </html>
