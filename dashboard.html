@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@icon/entypo@1.0.3/entypo.css" rel="stylesheet">
+  
+    <title>JobZilla</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+body{
+    
+    background:#fff;
+}
+/*profile page*/
+
+.left-profile-card .user-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.left-profile-card h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.left-profile-card p {
+    margin-bottom: 5px;
+}
+
+.left-profile-card .progress-bar {
+    background-color: var(--main-color);
+}
+
+.personal-info {
+    margin-bottom: 30px;
+}
+
+.personal-info .personal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.personal-list li {
+    margin-bottom: 5px;
+}
+
+.personal-info h3 {
+    margin-bottom: 10px;
+}
+
+.personal-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.personal-info i {
+    font-size: 15px;
+    color: var(--main-color);
+    ;
+    margin-right: 15px;
+    width: 18px;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+}
+
+.languages h3 {
+    margin-bottom: 15px;
+}
+
+.languages p {
+    margin-bottom: 5px;
+}
+
+.right-profile-card .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.right-profile-card .nav>li {
+    float: left;
+    margin-right: 10px;
+}
+
+.right-profile-card .nav-pills .nav-link {
+    border-radius: 26px;
+}
+
+.right-profile-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.right-profile-card h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.right-profile-card i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.right-profile-card .work-container {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+/*timeline*/
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.timeline-centered {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-centered:before,
+.timeline-centered:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-centered:after {
+    clear: both;
+}
+
+.timeline-centered:before,
+.timeline-centered:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-centered:after {
+    clear: both;
+}
+
+.timeline-centered:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    background: #f5f5f6;
+    /*left: 50%;*/
+    top: 20px;
+    bottom: 20px;
+    margin-left: 30px;
+}
+
+.timeline-centered .timeline-entry {
+    position: relative;
+    /*width: 50%;
+        float: right;*/
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.timeline-centered .timeline-entry:before,
+.timeline-centered .timeline-entry:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-centered .timeline-entry:after {
+    clear: both;
+}
+
+.timeline-centered .timeline-entry:before,
+.timeline-centered .timeline-entry:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-centered .timeline-entry:after {
+    clear: both;
+}
+
+.timeline-centered .timeline-entry.begin {
+    margin-bottom: 0;
+}
+
+.timeline-centered .timeline-entry.left-aligned {
+    float: left;
+}
+
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner {
+    margin-left: 0;
+    margin-right: -18px;
+}
+
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
+    left: auto;
+    right: -100px;
+    text-align: left;
+}
+
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon {
+    float: right;
+}
+
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label {
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -9px;
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner {
+    position: relative;
+    margin-left: -20px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner:before,
+.timeline-centered .timeline-entry .timeline-entry-inner:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner:after {
+    clear: both;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner:before,
+.timeline-centered .timeline-entry .timeline-entry-inner:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner:after {
+    clear: both;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
+    position: absolute;
+    left: -100px;
+    text-align: right;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-time>span {
+    display: block;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-time>span:first-child {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-time>span:last-child {
+    font-size: 12px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    background: #fff;
+    color: #737881;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    -moz-box-shadow: 0 0 0 5px #f5f5f6;
+    -webkit-box-shadow: 0 0 0 5px #f5f5f6;
+    box-shadow: 0 0 0 5px #f5f5f6;
+    line-height: 40px;
+    font-size: 15px;
+    float: left;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
+    background-color: #303641;
+    color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-secondary {
+    background-color: #ee4749;
+    color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-success {
+    background-color: #00a651;
+    color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-info {
+    background-color: #21a9e1;
+    color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-warning {
+    background-color: #fad839;
+    color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-danger {
+    background-color: #cc2424;
+    color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    position: relative;
+    background: #f5f5f6;
+    padding: 1em;
+    margin-left: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 9px 0;
+    border-color: transparent #f5f5f6 transparent transparent;
+    left: 0;
+    top: 10px;
+    margin-left: -9px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2,
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+    color: #737881;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.428571429;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
+    margin-top: 15px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+    color: #303641;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+    -webkit-opacity: .6;
+    -moz-opacity: .6;
+    opacity: .6;
+    -ms-filter: alpha(opacity=60);
+    filter: alpha(opacity=60);
+}
+
+
+/* 
+.btn {
+  background: #fff;
+  color: darkgreen;
+  border: 1px solid darkgreen;
+  box-shadow: inset 0 0 0 1px;
+  font-size: 1em;
+  padding: .75em;
+  margin-right: .5em;
+}
+
+.btn[disabled] {
+  color: #666;
+  border-color: #ddd;
+  opacity: .5;
+}
+
+.btn:not([disabled]):hover,
+.btn:not([disabled]):focus {
+  outline: 3px solid;
+  outline-offset: 1px;
+}
+
+.btn:not([disabled]):active {
+  background: darkgreen;
+  color: #fff;
+} */
+</style>
+<body>
+    <!-- ***** Header Area Start ***** -->
+   <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">Job<em>Zilla </em></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html" class="active">Jobs</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                          
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="team.html">Team</a>
+                                <a class="dropdown-item" href="blog.html">Blog</a>
+                                <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                <a class="dropdown-item" href="terms.html">Terms</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li> 
+                        <li><a href="index.html">Logout</a></li> 
+
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Call to Action Start ***** -->
+<section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="cta-content">
+                    <br>
+                    <br>
+                    <h2>Student <em>Dashboard</em></h2>
+                    <p>View all your details at one place</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <div class="top-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Basic Table</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div> -->
+        <div class="row" style="margin-top: 4em;">
+            <div class="col-lg-3 ">
+                <div class="card left-profile-card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="user-profile">
+                            <h3>John Doe</h3>
+                            <p>World of Internet</p>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <i class="fas fa-star text-info"></i>
+                                <i class="fas fa-star text-info"></i>
+                                <i class="fas fa-star text-info"></i>
+                                <i class="fas fa-star text-info"></i>
+                                <i class="fas fa-star text-info"></i>
+                            </div>
+                        </div>
+                        <div class="personal-info">
+                            <h3>Personal Information</h3>
+                            <ul class="personal-list">
+                                <li><i class="fas fa-briefcase "></i><span>Web Designer</span></li>
+                                <li><i class="fas fa-map-marker-alt "></i><span> New York</span></li>
+                                <li><i class="far fa-envelope "></i><span>like @example.com</span></li>
+                                <li><i class="fas fa-mobile "></i><span>1234564343</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3>Skills</h3>
+                            <p>Adobe Photoshop</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>HTML5 &amp; CSS3</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Javascript &amp; Jquery</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Angular &amp; React</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="languages">
+                            <h3>Languages</h3>
+                            <p>English</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>German</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p>Hindi</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="card right-profile-card">
+                    <div class="card-header alert-primary">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-selected="true">Work Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-education-tab" data-toggle="pill" href="#pills-education" role="tab" aria-selected="false">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-timeline-tab" data-toggle="pill" href="#pills-timeline" role="tab" aria-selected="false">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-document-tab" data-toggle="pill" href="#" role="tab" aria-selected="false">Document</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-event-tab" data-toggle="pill" href="#" role="tab" aria-selected="false">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-tasks-tab" data-toggle="pill" href="#" role="tab" aria-selected="false">Tasks</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body" >
+                        <div style="width: 100%; text-align: right;">
+                        <button id="editBtn" class="btn btn-primary" type="button">Edit Profile</button>
+                    </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="work-container"  id="work1">
+                                    <h3>Tech Lead :- World of Internet</h3>
+                                    <h4><i class="far fa-calendar-alt"></i>Jan 2017 to <span class="badge badge-info">Current</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    
+                                </div>
+                                <div class="work-container" id="work2">
+                                    <h3>Senior UI Developer :- Pixel Factory</h3>
+                                    <h4><i class="far fa-calendar-alt"></i>Jan 2017 to <span class="badge badge-info">Current</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="work-container" id="work3">
+                                    <h3>Jr. Front End Developer :- Graphics Media</h3>
+                                    <h4><i class="far fa-calendar-alt"></i>Jan 2017 to <span class="badge badge-info">Current</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-education" role="tabpanel" id="work4">
+                                <div class="work-container">
+                                    <h3>The Art Institute :- New Yourk</h3>
+                                    <h4><i class="far fa-calendar-alt"></i>Jan 2017 to <span class="badge badge-info">Current</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="work-container" id="work5">
+                                    <h3>Eitech :- New Jersy</h3>
+                                    <h4><i class="material-icons">date_range</i>Jan 2017 to <span class="badge badge-info">Current</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="work-container" id="work6">
+                                    <h3>School of Visual Arts :- Chicago</h3>
+                                    <h4><i class="material-icons">date_range</i>Jan 2017 to <span class="badge badge-info">Current</span></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-timeline" role="tabpanel">
+                                <div class="row">
+                                    <div class="timeline-centered">
+                                        <div class="timeline-entry">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-icon bg-success">
+                                                    <i class="entypo-feather"></i>
+                                                </div>
+                                                <div class="timeline-label">
+                                                    <h2><a href="#">Art Ramadani</a> <span>posted a status update</span></h2>
+                                                    <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-entry">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-icon bg-secondary">
+                                                    <i class="entypo-suitcase"></i>
+                                                </div>
+                                                <div class="timeline-label">
+                                                    <h2><a href="#">Job Meeting</a></h2>
+                                                    <p>You have a meeting at <strong>Laborator Office</strong> Today.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-entry">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-icon bg-info">
+                                                    <i class="entypo-location"></i>
+                                                </div>
+                                                <div class="timeline-label">
+                                                    <h2><a href="#">Arlind Nushi</a> <span>checked in at</span> <a href="#">Laborator</a></h2>
+                                                    <blockquote>Great place, feeling like in home.</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-entry">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-icon bg-warning">
+                                                    <i class="entypo-camera"></i>
+                                                </div>
+                                                <div class="timeline-label">
+                                                    <h2><a href="#">Arber Nushi</a> <span>changed his</span> <a href="#">Profile Picture</a></h2>
+                                                    <blockquote>Pianoforte principles our unaffected not for astonished travelling are particular.</blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-entry begin">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                                                    <i class="entypo-flight"></i> +
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>             
+</body>
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script> 
+<script src="assets/js/mixitup.js"></script> 
+<script src="assets/js/accordions.js"></script>
+
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
+<script type="text/javascript">
+    (function ( doc ) {
+  'use strict';
+  // Use a more terse method for getting by id
+  function getById ( id_string ) {
+    return doc.getElementById(id_string);
+  }
+
+  function insertAfter( newEl, refEl ) {
+    refEl.parentNode.insertBefore(newEl, refEl.nextSibling);
+  }
+
+  var editElement = getById('myContent');
+  var undoBtn = getById('undo');
+  var saveBtn = getById('save');
+  var originalContent = editElement.innerHTML;
+  var updatedContent = "";
+
+  // if a user has refreshed the page, these declarations
+  // will make sure everything is back to square one.
+  undoBtn.disabled = true;
+  saveBtn.disabled = true;
+
+  // create a redo button
+  var redoBtn = doc.createElement('button');
+  var redoLabel = doc.createTextNode('Redo');
+  redoBtn.id = 'redo';
+  redoBtn.className = 'btn';
+  redoBtn.hidden = true;
+  redoBtn.appendChild(redoLabel);
+  insertAfter( redoBtn, undo );
+
+  // if the content has been changed, enable the save button
+  editElement.addEventListener('keypress', function () {
+    if ( editElement.innerHTML !== originalContent ) {
+      saveBtn.disabled = false;
+    }
+  });
+
+  // on button click, save the updated content
+  // to the updatedContent var
+  saveBtn.addEventListener('click', function () {
+    // updates the myContent block to 'save'
+    // the new content to updatedContent var
+    updatedContent = getById('myContent').innerHTML;
+
+    if ( updatedContent !== originalContent ) {
+      // Show the undo button in the case that you
+      // didn't like what you wrote and you want to
+      // go back to square one
+      undoBtn.disabled = false;
+    }
+  });
+
+  // If you click the undo button,
+  // revert the innerHTML of the contenteditable area to
+  // the original statement that was there.
+  //
+  // Then add in a 'redo' button, to bring back the edited content
+  undoBtn.addEventListener('click', function() {
+    editElement.innerHTML = originalContent;
+    undoBtn.disabled = true;
+    redoBtn.hidden = false;
+  });
+
+  redoBtn.addEventListener('click', function() {
+    editElement.innerHTML = updatedContent;
+    this.hidden = true;
+    undoBtn.disabled = false;
+    undoBtn.focus();
+  });
+
+})( document );
+</script>
+<script type="text/javascript">
+    var editBtn = document.getElementById('editBtn');
+var editables = document.querySelectorAll('#work1,#work2,#work3,#work4,#work5,#work6')
+ 
+editBtn.addEventListener('click', function(e) {
+  if (!editables[0].isContentEditable) {
+    editables[0].contentEditable = 'true';
+    editables[1].contentEditable = 'true';
+    editables[2].contentEditable = 'true';
+    editables[3].contentEditable = 'true';
+    editables[4].contentEditable = 'true';
+    editables[5].contentEditable = 'true';
+
+    editBtn.innerHTML = 'Save ';
+    // editBtn.style.backgroundColor = 'blue';
+  } else {
+    // Disable Editing
+    editables[0].contentEditable = 'false';
+    editables[1].contentEditable = 'false';
+    editables[2].contentEditable = 'true';
+    editables[3].contentEditable = 'true';
+    editables[4].contentEditable = 'true';
+    editables[5].contentEditable = 'true';
+
+    
+    // Change Button Text and Color
+    editBtn.innerHTML = 'Edit Profile';
+    // editBtn.style.backgroundColor = '#F96';
+    // Save the data in localStorage 
+    for (var i = 0; i < editables.length; i++) {
+      localStorage.setItem(editables[i].getAttribute('id'), editables[i].innerHTML);
+    }
+  }
+});
+</script>
+</html>
